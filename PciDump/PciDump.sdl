@@ -1,0 +1,18 @@
+TOKEN
+	Name  = "PciDump_INF_SUPPORT"
+	Value  = "1"
+	Help  = "Main switch to enable PciDump support in Project"
+	TokenType = Boolean
+	TargetH = Yes
+	TargetEQU = Yes
+	TargetMAK = Yes
+	Master = Yes
+End
+
+INFComponent
+	Name  = "PciDump"
+	File  = "PciDump.inf"
+	Package  = "PciDump"
+	ModuleTypes  = "UEFI_APPLICATION"
+End
+

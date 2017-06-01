@@ -1,0 +1,10 @@
+<component>
+	name = "PciDump"
+	category = ModulePart
+	LocalRoot = "SamsungPkg\Project\PciDump\"
+	RefName = "PciDump"
+[INF]
+"PciDump.inf"
+[files]
+"PciDump.sdl"	
+<endComponent>
