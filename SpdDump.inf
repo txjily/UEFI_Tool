@@ -1,0 +1,26 @@
+[Defines]
+	INF_VERSION = 0x00010015
+	VERSION_STRING = 1.0
+	BASE_NAME = SpdDump
+    FILE_GUID                      = 53eb513c-2a0c-483e-bdef-a0d676e244c0
+    MODULE_TYPE                    = UEFI_APPLICATION
+    ENTRY_POINT                    = SpdDumpEntryPoint
+[Sources]
+  SpdDump.c
+
+[Packages]	
+  MdePkg/MdePkg.dec                             # base.h
+  AmiCompatibilityPkg/AmiCompatibilityPkg.dec   # efi.h
+   
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiBootServicesTableLib
+  AmiDxeLib
+  
+[Protocols]
+    gEfiSmbusHcProtocolGuid
+    
+[Guids]
+
+[Depex]
+    gEfiSmbusHcProtocolGuid  

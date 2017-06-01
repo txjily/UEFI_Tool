@@ -1,0 +1,18 @@
+TOKEN
+	Name  = "SpdDump_INF_SUPPORT"
+	Value  = "1"
+	Help  = "Main switch to enable SpdDump support in Project"
+	TokenType = Boolean
+	TargetH = Yes
+	TargetEQU = Yes
+	TargetMAK = Yes
+	Master = Yes
+End
+
+INFComponent
+	Name  = "SpdDump"
+	File  = "SpdDump.inf"
+	Package  = "SpdDump"
+	ModuleTypes  = "UEFI_APPLICATION"
+End
+
